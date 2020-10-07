@@ -112,18 +112,18 @@
 
 ### 브라우저 테스트
 
-- `New` 「ショートカットキー入力」コマンドを追加しました。([#194](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/194))
-- `New` 特別な変数として、「OS」「DEVICE_TYPE」を利用可能になりました。
-- `New` Windows版Magic Pod Desktopインストール時の、OSの警告メッセージが出なくなりました。([#136](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/136))
-- `Fix` 画面キャプチャ範囲「HTML」の画面キャプチャがWindows上のChromeでうまくとれないことがあったので修正しました。
+- `New` 「단축키 입력」명령어를 추가했습니다.
+- `New` 특별 변수로「OS」「DEVICE_TYPE」를 이용할 수 있습니다.
+- `New` Windows판 Magic Pod Desktop 설치 시, OS 경고 메시지가 뜨지 않습니다.
+- `Fix` 화면 캡쳐 범위「HTML」의 화면 캡쳐가 Windows상 Chrome에서 제대로 캡쳐가 되지 않아 수정했습니다.
 
-## バージョン0.58.0(2020/7/24)
+## 버전 0.58.0(2020/7/24)
 
-### 下位互換性のない変更
+### 하휘호환 되지 않는 변경
 
-- `New` Windows上のMagicPodDesktop.exeを使ったコマンドライン実行において、OSのプロキシ設定を利用しないようにしました。
-  - この処理が原因でテストがいつまでも終了しないことがあるためです。
-  - Windows上のMagicPodDesktop.exeコマンドライン実行でプロキシサーバを利用する必要がある場合は、[magic_pod_config.jsonで直接指定](https://www.trident-qa.com/magic-pod-proxy/)してください。
+- `New` Windows상의 MagicPodDesktop.exe을 사용한 명령어 라인 실행에 OS 프록시 설정을 이용하지 않도록 했습니다.
+  - 이 처리가 원인으로 테스트가 영원히 종료되지 않을 수 있습니다.
+  - Windows상 MagicPodDesktop.exe 명령어 라인 실행에서 프록시 서버를 이용해야하는 경우, [magic_pod_config.jsonで直接指定]에서 직접 지정 해주세요.
 - `Fix` iOSアプリの「表示されるまでスワイプ」が長時間続いたり、間違った方向にスワイプされたりする問題を修正しました。
   - 今回の修正により、「表示されるまでスワイプ」の動きが変わるケースがあります。
 
