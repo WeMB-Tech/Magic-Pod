@@ -142,7 +142,7 @@
 - `New` 「WebView 요소를 HTML로 스캔」을 off로 설정하고 스캔한 UI를 on으로 재업로드한 경우의 작동상황을 개선했습니다.
 - `New` Remote TestKit을 통한 테스트 일괄 실행 화면 캡처가 FLAG_SECURE이 유효한 안드로이드 앱에서도 가능합니다.
 - `New` 로컬PC의 iOS 시뮬레이터에 Xcode11.6、iOS13.6을 이용 할 수 있습니다.
-- `New` Remote TestKit의 Android 테스트에서 사용하는 Appium 버전을 [1.17.1](https://github.com/appium/appium/releases/tag/v1.17.1)로 설정하였습니다.
+- `New` Remote TestKit의 Android 테스트에서 사용하는 Appium 버전을 [1.17.1]로 설정하였습니다.
 - `New` 테스트 타임아웃 에러가 자주 발생하지 않도록 조치하였습니다.
 - `New` 지원 대상 버전인 Java8 이외의 것을 사용하고 있는 경우에도 Magic Pod Desktop의 오류가 발생하지 않도록 조치하였습니다.
 - `New` App 파일의 클라우드 업로드에서 .zip 파일 내의 .app 파일명이 영숫자 이외에도 업로드 가능하게 되었습니다.
