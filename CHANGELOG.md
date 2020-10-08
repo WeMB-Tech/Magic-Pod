@@ -123,43 +123,43 @@
 
 - `New` Windows상의 MagicPodDesktop.exe을 사용한 명령어 라인 실행에 OS 프록시 설정을 이용하지 않도록 했습니다.
   - 이 처리가 원인으로 테스트가 영원히 종료되지 않을 수 있습니다.
-  - Windows상 MagicPodDesktop.exe 명령어 라인 실행에서 프록시 서버를 이용해야하는 경우, [magic_pod_config.jsonで直接指定]에서 직접 지정 해주세요.
-- `Fix` iOSアプリの「表示されるまでスワイプ」が長時間続いたり、間違った方向にスワイプされたりする問題を修正しました。
-  - 今回の修正により、「表示されるまでスワイプ」の動きが変わるケースがあります。
+  - Windows상 MagicPodDesktop.exe 명령어 라인 실행에서 프록시 서버를 이용해야하는 경우, [magic_pod_config.json]에서 직접 지정 해주세요.
+- `Fix` iOS앱의「표시될 때까지 스와이프」가 장시간 지속 되거나, 잘못된 방향으로 스와이프 되는 문제를 수정했습니다
+  - 이번 업데이트로 인해,「표시될 때까지 스와이프」의 움직임이 바뀌는 경우도 있습니다.
 
-### 全般
+### 전반
 
-- `New` 「日時計算」コマンドの「言語設定」で「中国語」を選択可能になりました。
-- `Fix` 「四則演算」コマンドのパラメータに変数を指定できない不具合を修正しました。
+- `New` 「일시계산」명령어의 「언어설정」에서 「중국어」선택이 가능합니다.
+- `Fix` 「사칙연산」명령어의 parameter 변수를 지정할 수 없는 오류를 수정했습니다.
 
-### モバイルアプリテスト
+### 모바일앱 테스트
 
-- `New` 「シェイク」コマンドを追加しました。([#168](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/168))
-  - 「エミュレータ」「シミュレータ」で利用できます。
-- `New` 「長押し & 移動」コマンドを追加しました。([#158](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/158))
-- `New` テスト対象指定パネルで「アプリのタイムゾーン」を指定可能になりました。([#180](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/180))
-- `New` テスト対象指定パネルの「端末の言語」で「中国語」を選択可能になりました。([#182](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/182))
-- `New` 「WebView要素をHTMLとしてスキャンする」をオフにしてスキャンしたUIをオンで再アップロードした場合の挙動を改善しました。([#174](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/174))
-- `New` Remote TestKitを使ったテスト一括実行の画面キャプチャが、FLAG_SECUREが有効なAndroidアプリでも取得可能になりました。
-- `New` ローカルPCのiOSシミュレータに、Xcode11.6、iOS13.6を利用可能になりました。
-- `New` Remote TestKitのAndroidテストで使用するAppiumのバージョンを[1.17.1](https://github.com/appium/appium/releases/tag/v1.17.1)にしました。
-- `New` テストのタイムアウトエラーが出にくいようにしました。
-- `New` サポート対象バージョンであるJava8以外を使っている場合でも、Magic Pod Desktopがエラーを出さない様にしました。
-- `New` Appファイルのクラウドアップロードにおいて、.zipファイル内の.appファイル名が英数字以外でもアップロード可能になりました。
-- `Fix` WebView関連のコマンドの速度が遅くなっていたので修正しました。
+- `New` 「쉐이크」명령어를 추가했습니다.
+  - 「애뮬레이터」「시뮬레이터」에서 이용할 수 있습니다.
+- `New` 「길게 누름 & 이동」명령어를 추가했습니다.
+- `New` 테스트 대상 지정 패널에서「앱 타임 존」을 지정할 수 있습니다.
+- `New` 테스트 대상 지정 패널「디바이스 언어」에서「중국어」를 선택 할 수 있습니다.
+- `New` 「WebView 요소를 HTML로 스캔」을 off로 설정하고 스캔한 UI를 on으로 재업로드한 경우의 작동상황을 개선했습니다.
+- `New` Remote TestKit을 통한 테스트 일괄 실행 화면 캡처가 FLAG_SECURE이 유효한 안드로이드 앱에서도 가능합니다.
+- `New` 로컬PC의 iOS 시뮬레이터에 Xcode11.6、iOS13.6을 이용 할 수 있습니다.
+- `New` Remote TestKit의 Android 테스트에서 사용하는 Appium 버전을 [1.17.1](https://github.com/appium/appium/releases/tag/v1.17.1)로 설정하였습니다.
+- `New` 테스트 타임아웃 에러가 자주 발생하지 않도록 조치하였습니다.
+- `New` 지원 대상 버전인 Java8 이외의 것을 사용하고 있는 경우에도 Magic Pod Desktop의 오류가 발생하지 않도록 조치하였습니다.
+- `New` App 파일의 클라우드 업로드에서 .zip 파일 내의 .app 파일명이 영숫자 이외에도 업로드 가능하게 되었습니다.
+- `Fix` WebView 관련 명령어의 속도가 느려져서 수정했습니다.
 
-### ブラウザテスト
+### 브라우저 테스트
 
-- `New` デスクトップChromeのモバイルエミュレーション機能を使い、モバイルWebサイトのテスト作成・実行が可能になりました。([#151](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/151))
-- `Fix` 全角文字を含む属性名が含まれるWebページのUIスキャンがエラーになる不具合を修正しました。
+- `New` 데스크톱 Chrome 모바일 에뮬레이션 기능을 사용하여, 모바일 Web사이트의 테스트 생성・실행이 가능합니다.
+- `Fix` 전각 문자를 포함한 속성명이 포함된 Web 페이지의 UI 스캔이 에러가 되는 오류를 수정했습니다.
 
-## バージョン0.57.0(2020/7/11)
+## 버전 0.57.0(2020/7/11)
 
-### 全般
+### 전반
 
-- `New` テストごとのテスト結果一覧画面にも、テストを実行した端末名・iOSバージョン・ブラウザなどのラベルが表示されるようになりました。
-- `New` テスト一括実行結果一覧のラベルで、「環境」と「ブラウザバージョン」の情報が表示されるようになりました。
-- `New` 「画面キャプチャを取得」コマンドの引数に画面キャプチャ名を指定可能になりました。
+- `New` 각각의 테스트별로 테스트 결과 일람 화면에 테스트를 실행한 디바이스명・iOS 버전・브라우저 등의 라벨이 표시됩니다.
+- `New` 테스트 일괄 실행 결과 일람의 라벨에서 「환경」과「브라우저 버전」의 정보가 표시됩니다.
+- `New` 「화면 캡쳐 취득」명령어의 인수에서 화면 캡쳐명을 지정할 수 있습니다.
 - `New` テスト一括実行結果取得のWeb APIに、パラメータmin_batch_run_numberとmax_batch_run_number、返り値started_atとfinished_atを追加しました。
 - `New` 画面キャプチャダウンロードのWeb APIにパラメータfile_name_body_type、mask_dynamically_changed_areaを追加しました。
 - `New` [magic-pod-api-client](https://github.com/Magic-Pod/magic-pod-api-client)の[0.57.0.1](https://github.com/Magic-Pod/magic-pod-api-client/releases/tag/0.57.0.1)で、get-screenshotsにパラメータfile_index_type、file_name_body_type、download_type、mask_dynamically_changed_areaを追加しました。
