@@ -160,46 +160,46 @@
 - `New` 각각의 테스트별로 테스트 결과 일람 화면에 테스트를 실행한 디바이스명・iOS 버전・브라우저 등의 라벨이 표시됩니다.
 - `New` 테스트 일괄 실행 결과 일람의 라벨에서 「환경」과「브라우저 버전」의 정보가 표시됩니다.
 - `New` 「화면 캡쳐 취득」명령어의 인수에서 화면 캡쳐명을 지정할 수 있습니다.
-- `New` テスト一括実行結果取得のWeb APIに、パラメータmin_batch_run_numberとmax_batch_run_number、返り値started_atとfinished_atを追加しました。
-- `New` 画面キャプチャダウンロードのWeb APIにパラメータfile_name_body_type、mask_dynamically_changed_areaを追加しました。
-- `New` [magic-pod-api-client](https://github.com/Magic-Pod/magic-pod-api-client)の[0.57.0.1](https://github.com/Magic-Pod/magic-pod-api-client/releases/tag/0.57.0.1)で、get-screenshotsにパラメータfile_index_type、file_name_body_type、download_type、mask_dynamically_changed_areaを追加しました。
-- `New` 共有ステップのパラメータ関連の表示を改善しました。
+- `New` 테스트 일괄 실행 결과 취득 Web API에서 parameter min_batch_run_number과 max_batch_run_number, 되돌림값 started_atとfinished_at를 추가했습니다.
+- `New` 화면 캡쳐 다운로드의 Web API에서 parameter file_name_body_type、mask_dynamically_changed_area를 추가했습니다.
+- `New` [magic-pod-api-client 0.57.0.1] 에서、get-screenshots에 parameter file_index_type、file_name_body_type、download_type、mask_dynamically_changed_area를 추가했습니다.
+- `New` 공유 단계의 parameter 관련 표시를 개선했습니다.
 
-### モバイルアプリテスト
+### 모바일앱 테스트
 
-- `New` 1回のスキャンで複数のWebViewが見つかった場合にも、「Web要素をHTMLとしてスキャンする」が正しく動作するようになりました。
-- `New` 「スワイプ」コマンドの座標指定方法が、絶対値指定から「%」指定になりました。([#81](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/81))
-- `Fix` 「他のアプリを起動(Android)」のコマンドがエラーになることがあったので修正しました。
+- `New` 1회의 스캔으로 복수의 WebView를 찾은 경우에도,「Web표시를 HTML로 스캔」 설정이 올바르게 작동됩니다.
+- `New` 「스와이프」명령어 좌표 지정 방법이 절대값 지정에서「%」지정으로 변경되었습니다.
+- `Fix` 「다른 앱 부팅(Android)」명령어의 오류를 수정했습니다.
 
-### ブラウザテスト
+### 브라우저 테스트
 
-- `New` BrowserStack/SauceLabsを使ったテストが、Internet Explorerでも可能になりました。
+- `New` BrowserStack/SauceLabs를 사용한 테스트가 Internet Explorer에서도 가능합니다.
 
-## バージョン0.56.0(2020/6/28)
+## 버전 0.56.0(2020/6/28)
 
-### 全般
+### 전반
 
-- `New` [四則演算](https://github.com/Magic-Pod/japanese-issue-and-doc/wiki/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E4%B8%80%E8%A6%A7)コマンドを追加しました。([#164](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/164))
-- `New` SauceLabs/BrowserStack側のテスト結果ページで、対応するMagic Podのプロジェクト名/一括実行番号/テスト名を確認できるようになりました。
-- `New` 特別な変数として、現在の実行環境を表す[ENVIRONMENT](https://www.trident-qa.com/magic-pod-variable/#sepcial_vars)が利用可能になりました。 
-- `New` UI解析の速度を改善しました。
-- `New` magic_pod_config.json上で、Magic Pod Desktopが利用する[プロキシ情報](https://www.trident-qa.com/magic-pod-proxy/)を指定可能になりました。
-  - proxyServerUrl、proxyServerAuthType、proxyServerAuthUser、proxyServerAuthPasswordが指定できます。
-- `New` 「日時保存」コマンドのコマンド名を「日付計算」に変更し、「システム」のタブに移動しました。
-- `New` ユーザー新規登録の際に、モバイルアプリテストのスタンダードプラン1ヶ月無料トライアルが申し込み可能になりました。
-- `New` 組織のプランページにて、テストケース数150を選択可能になりました。
-- `Fix` テスト失敗時の自動修復に失敗することがある不具合を修正しました。
-- `Fix` テスト対象指定パネルで制御文字等を入力すると、パネルが開けなくなることがあったので修正しました。
-- `Fix` 環境変数HTTP_PROXY、HTTPS_PROXY、NO_PROXYが指定されているとMagic Pod Desktopが正常に動作しない不具合を修正しました。
+- `New` [사칙연산] 명령어를 추가했습니다.
+- `New` SauceLabs/BrowserStack측 테스트 결과 페이지에서 대응하는 Magic Pod 프로젝트명/일괄 실행 번호/테스트명을 확인할 수 있습니다.
+- `New` 특별변수로 현재 실행환경을 나타내는 [ENVIRONMENT]를 이용할 수 있습니다. 
+- `New` UI해석 속도를 개선했습니다.
+- `New` magic_pod_config.json상에서, Magic Pod Desktop가 이용하는 [프록시 정보]를 지정할 수 있습니다.
+  - proxyServerUrl、proxyServerAuthType、proxyServerAuthUser、proxyServerAuthPassword가 지정 가능합니다.
+- `New` 「일시저장」명령어의 이름을「일시계산」으로 변경하였고,「시스템」탭으로 이동되었습니다.
+- `New` 사용자 신규 등록시, 모바일앱테스트 스탠다드플랜 1개월무료 계정을 신청할 수 있습니다.
+- `New` 조직의 플랜 페이지에서 테스트 케이스 수 150을 선택할 수 있습니다.
+- `Fix` 테스트 실패시의 자동복구 실패 오류를 수정했습니다.
+- `Fix` 테스트 대상 지정 패널에서 제어문자등을 입력하면 패널이 열리지 않는 경우를 수정했습니다.
+- `Fix` 환경변수 HTTP_PROXY、HTTPS_PROXY、NO_PROXY가 지정되어 있으면 Magic Pod Desktop이 정상적으로 작동하지 않는 오류를 수정했습니다.
 
-### ブラウザテスト
+### 브라우저 테스트
 
-- `New` [BrowserStack](https://www.trident-qa.com/magic-pod-browserstack-batch-run-browser/)/[SauceLabs](https://www.trident-qa.com/magic-pod-saucelabs-batch-run-browser/)を使った、画面からの一括テスト実行/Web API実行/スケジュール実行が可能になりました。([#170](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/170))
-- `New` Chromium Edgeを使ったテストが可能になりました。([#150](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/150))
-  - Windows版とMac版の両方に対応しています。
-- `New` magic_pod_config.jsonに[driverExecutableDir](https://www.trident-qa.com/magic-pod-web-test-advanced/#old_browser)を設定することで、Magic Pod Desktopで通常サポートされていないバージョンのブラウザでもテストが可能になりました。
+- `New` [BrowserStack]/[SauceLabs]를 사용한, 화면에서 일괄 테스트 실행/Web API실행/스케쥴 실행이 가능합니다.
+- `New` Chromium Edge를 사용한 테스트가 가능합니다.
+  - Windows판과 Mac판 양쪽 다 대응하고 있습니다.
+- `New` magic_pod_config.json에 [driverExecutableDir]를 설정함으로서, Magic Pod Desktop에서 통상 지원되지 않는 버전의 브라우저에서도 테스트가 가능합니다.
 
-## バージョン0.55.0(2020/6/13)
+## 버전 0.55.0(2020/6/13)
 
 ### 全般
 
