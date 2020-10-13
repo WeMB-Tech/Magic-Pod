@@ -201,10 +201,10 @@
 
 ## 버전 0.55.0(2020/6/13)
 
-### 全般
+### 전반
 
-- `New` 有料プランの支払いに利用するカードの複数登録・変更・削除が可能になりました。
-- `New` テスト結果画面のAppium/Seleniumログを見やすくしました。
+- `New` 유료 요금제 결제에 사용하는 카드를 여러장 등록·변경·삭제가 가능합니다.
+- `New` 테스트 결과 화면의 Appium/Selenium 로그를 보기 쉽게 변경했습니다.テスト結果画面のAppium/Seleniumログを見やすくしました。
 - `New` テスト結果画面のAppium/Seleniumログをクリップボードにコピーできるようになりました。
 - `New` 直近のテスト結果をWeb APIで取得可能になりました。
 - `New` [magic-pod-api-client](https://github.com/Magic-Pod/magic-pod-api-client)のバージョン[0.55.0.1](https://github.com/Magic-Pod/magic-pod-api-client/releases/tag/0.55.0.1)で、最新の一括テスト実行番号取得と画面キャプチャのダウンロードが可能になりました。
