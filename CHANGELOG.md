@@ -204,22 +204,22 @@
 ### 전반
 
 - `New` 유료 요금제 결제에 사용하는 카드를 여러장 등록·변경·삭제가 가능합니다.
-- `New` 테스트 결과 화면의 Appium/Selenium 로그를 보기 쉽게 변경했습니다.テスト結果画面のAppium/Seleniumログを見やすくしました。
-- `New` テスト結果画面のAppium/Seleniumログをクリップボードにコピーできるようになりました。
-- `New` 直近のテスト結果をWeb APIで取得可能になりました。
-- `New` [magic-pod-api-client](https://github.com/Magic-Pod/magic-pod-api-client)のバージョン[0.55.0.1](https://github.com/Magic-Pod/magic-pod-api-client/releases/tag/0.55.0.1)で、最新の一括テスト実行番号取得と画面キャプチャのダウンロードが可能になりました。
-- `Fix` テスト失敗時の自動修復に失敗することがある不具合を修正しました。
+- `New` 테스트 결과 화면의 Appium/Selenium 로그를 보기 쉽게 변경했습니다.
+- `New` 테스트 결과 화면의 Appium/Selenium 로그를 클립보드에 복사할 수 있습니다.
+- `New` 최근 실행했던 테스트 결과를 WebAPI로 취득할 수 있습니다.
+- `New` [magic-pod-api-client 버전 0.55.0.1]은 최근 실행했던 일괄 테스트 실행 번호 취득 및 화면 캡쳐 다운로드가 가능합니다.
+- `Fix` 테스트 실패시, 자동복원에 실패하는 오류를 수정했습니다.
 
-### モバイルアプリテスト
+### 모바일 앱 테스트
 
-- `New` リニューアルされた新しいBitriseステップ「Magic Pod」をリリースしました。
-  - テスト設定番号でMagic Pod側の設定を参照、またはWeb APIに近い形式で設定値をBitriseステップ側に保持できます。
-  - 従来のBitriseステップでは未対応だった様々なテスト一括実行パラメータを指定できます。
-  - テスト終了時・成功時にアプリを削除できます。
-  - 従来の「Magic Pod UI test」ステップは今後非推奨になります。
-- `New` iOSクラウドシミュレータのバージョンに「11.4」を追加しました。([#139](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/139))
-- `New` 「他のアプリを起動」コマンドを追加しました。(外部クラウドサービス上でのiOSテストには未対応です)([#177](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/177))
-- `New` Android5、6のクラウドエミュレータでもWebViewのテストが動作するようになりました。([#139](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/139))
+- `New` 리뉴얼 된 새로운 Bitrise 스텝「Magic Pod」를 출시했습니다.
+  - 테스트 설정 번호에서 Magic Pod의 설정을 참조하거나, WebAPI에 가까운 형식으로 설정 값을 Bitrise 스텝에서 유지할 수 있습니다.
+  - 기존 Bitrise 스텝에서는 지원되지 않았던 다양한 테스트 일괄실행 parameter를 지정할 수 있습니다.
+  - 테스트 종료 및 성공 시에 앱을 삭제할 수 있습니다.
+  - 기존의 「Magic Pod UI test」 단계는 이제부터 권장하지 않습니다.
+- `New` iOS 클라우드 시뮬레이터 버전에「11.4」를 추가했습니다.
+- `New` 「다른 앱 부팅」명령어를 추가했습니다.
+- `New` Android5、6의 클라우드 에뮬레이터에서도 Web View 테스트가 작동합니다.
 - `New` モバイルアプリテストの無料プランで利用できるクラウド端末の初月利用時間を10時間に増やしました。
 - `New` SauceLabsで使用するAppiumのバージョンを[1.17.1](https://github.com/appium/appium/releases/tag/v1.17.1)にしました。
 
