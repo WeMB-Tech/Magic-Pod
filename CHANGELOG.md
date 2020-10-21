@@ -256,11 +256,11 @@
 
 ### 전반
 
-- `Fix` 条件によっては、Magic Pod Desktopを使った画面キャプチャ取得に失敗するようになっていたので修正しました。
+- `Fix` 조건에 따라서, Magic Pod Desktop을 사용하여 화면 캡쳐를 실패하는 경우를 수정했습니다.
 
-## バージョン0.54.1(2020/6/3)
+## 버전 0.54.1(2020/6/3)
 
-### モバイルアプリテスト
+### 모바일 앱 테스트
 
 - `Fix` 조건에 따라서, Magic Pod Desktop을 사용하여 Android의 화면 캡쳐를 실패하는 경우를 수정했습니다.
 
@@ -293,68 +293,68 @@
 
 ### 하위 호환되지 않는 변경 (모바일 앱 테스트)
 
-- `Fix` 「앱 부팅」 옵션으로 「프로세스 재기동」을 지정한 경우, iOS클라우드 시뮬레이터에서 앱이 재설치되는 오류를 수정했습니다.
+- `Fix` 「앱 부팅」 옵션으로 「프로세스 재기동」을 지정한 경우, iOS 클라우드 시뮬레이터에서 앱이 재설치되는 오류를 수정했습니다.
 
-### 全般
+### 전반
 
-- `New` テスト編集画面で「コメント」と「空行」を指定可能になりました。([#19](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/19))
-- `New` Web APIのcross-batch-runと[magic-pod-api-client](https://github.com/Magic-Pod/magic-pod-api-client)のbatch-runで、テスト設定の番号を指定してテスト実行可能になりました。
-  - Web APIから実行する設定を画面側で管理できます。
-  - test settings numberとtest settingsの両方を指定すれば、番号の設定を利用しつつ、さらにその一部だけを変更して実行することもできます。
-  - [magic-pod-api-client](https://github.com/Magic-Pod/magic-pod-api-client)のバージョンは[0.53.0.1](https://github.com/Magic-Pod/magic-pod-api-client/releases/tag/0.53.0.1)を利用してください。
-- `New` [ヘルプページ](https://www.trident-qa.com/magic-pod-help/)の読み込み速度を大幅に改善しました。
-- `New` テスト結果画面の表示を改善しました。([#172](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/172))
-- `New` テスト編集画面の表示を改善しました。([#165](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/165))
-- `Fix` プロジェクト内に同じ名前のUIが複数あると、テスト一括実行が失敗することがあったので修正しました。
-- `Fix` 共有変数の値に「&」が含まれているとMagic Pod Desktopのエラーが発生する不具合を修正しました。
-- `Fix` テスト結果に関する問い合わせが失敗するようになっていたケースがあったので修正しました。
+- `New` 테스트 편집화면에서「코멘트」와 「글을 쓰지 않고 비워둔 줄」을 지정할 수 있습니다.
+- `New` Web API의 cross-batch-run과 [magic-pod-api-client]의 batch-run에서, 테스트 설정의 번호를 지정하고 테스트를 실행 할 수 있습니다.
+  - Web API에서 실행할 설정을 화면 측에서 관리할 수 있습니다.
+  - test settings number와 test settings를 모두 지정하면, 번호 설정을 이용하면서 일부만 변경하여 실행할 수도 있습니다.
+  - [magic-pod-api-client] 버전은 [0.53.0.1]를 이용해주세요.
+- `New` [도움말 페이지]의 불로오기 속도를 개선했습니다.
+- `New` 테스트 결과 화면 표시를 개선했습니다.
+- `New` 테스트 편집 화면의 표시를 개선했습니다.
+- `Fix` 프로젝트 내에 같은 이름의 UI가 여러개인 경우, 테스트 일괄 실행을 실패하는 경우가 있어서 수정했습니다.
+- `Fix` 공유 변수 값에「&」가 포함되면 Magic Pod Desktop의 에러가 발생하는 오류를 수정했습니다.
+- `Fix` 테스트 결과에 관한 문의가 실패한 케이스가 있어서 수정했습니다.
 
-### モバイルアプリテスト
+### 모바일 앱 테스트
 
-- `New` Androidクラウドシミュレータのバージョンに「9.0」「８.1」「8.0」「7.1」「7.0」「6.0」「5.1」「5.0」を指定可能になりました。([#139](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/139))
-- `New` Androidクラウドエミュレータで、カメラアプリやカメラを使ったアプリが動作するようになりました。
-  - 撮影できるのはエミュレータが表示している初期画像です。
-- `New` iOSクラウドシミュレータの高速起動する端末が「13.4」の「iPhone 8」になりました。
-- `New` 利用しているAppiumのバージョンを[1.17.1](https://github.com/appium/appium/releases/tag/v1.17.1)にしました。
-  - iOS13.4でHTMLとしてスキャンしたWebViewのテストが動作しない問題などが解消されています。
-- `New` ローカルPCのiOSシミュレータテストで「iPhone SE (2nd generation)」「iPad Pro (12.9-inch) (4th generation)」「iPad Pro (11-inch) (2nd generation)」を指定できるようになりました。
-- `New` 「WebView要素をHTMLとしてスキャンする」を有効にしている場合にも、スキャン結果にAIロケータが含まれるようになりました。
-- `New` 「WebView要素をHTMLとしてスキャンする」を指定した場合のUIスキャンの速度を改善しました。
-- `Fix` 外部クラウドサービスのレスポンスが遅くタイムアウトエラーが発生することがあったので修正しました。
-- `Fix` Remote TestKit環境の問題で発生する各種エラーが起きにくいようにしました。
+- `New` Android 클라우드 시뮬레이터 버전으로 「9.0」「８.1」「8.0」「7.1」「7.0」「6.0」「5.1」「5.0」을 지정할 수 있습니다.
+- `New` Android 클라우드 에뮬레이터로 카메라 앱 및 카메라를 사용한 앱이 작동 가능합니다.
+  - 촬영 가능한 것은 에뮬레이터가 표시하고 있는 초기 이미지입니다.
+- `New` iOS 클라우드 시뮬레이터의 고속 부팅 디바이스는 「13.4」의 「iPhone8」입니다.
+- `New` 이용하고 있는 Appium의 버전이 1.17.1로 업그레이드 되었습니다.
+  - iOS13.4에서 HTML로 스캔 한 WebView의 테스트가 작동하지 않는 문제 등을 해결하고 있습니다.
+- `New` 로컬 PC의 iOS 시뮬레이터 테스트에서「iPhone SE (2nd generation)」「iPad Pro (12.9-inch) (4th generation)」「iPad Pro (11-inch) (2nd generation)」을 지정할 수 있습니다.
+- `New` 「WebView요소를 HTML로 스캔」가 유효한 경우에도 스캔 결과에 AI로케이터가 포함됩니다.
+- `New` 「WebView요소를 HTML로 스캔」을 지정한 경우의 UI스캔 속도를 개선했습니다.
+- `Fix` 외부 클라우드 서비스의 response가 늦게 타임아웃 에러가 발생하는 경우가 있어 수정했습니다.
+- `Fix` Remote TestKit 환경 문제로 발생하는 각종 오류들이 추후 발생하지 않도록 개선했습니다.
 
-### ブラウザテスト
+### 브라우저 테스트
 
-- `New` ユーザー登録の際に「ブラウザテスト機能」の無料トライアルをリクエストできるようになりました。
+- `New` 사용자 등록시에「브라우저 테스트 기능」무료 트라이얼을 신청할 수 있습니다.
 
-## バージョン0.52.0(2020/4/26)
+## 버전 0.52.0(2020/4/26)
 
-### 機能追加
+### 기능 추가
 
-- iOSクラウド端末のテスト作成時にも機種を選べるようになりました。([#139](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/139))(モバイルアプリテスト)
-- iOSクラウド端末でバージョン13.4と12.4を選べるようになりました。([#139](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/139))(モバイルアプリテスト)　
-- Androidクラウド端末で選べる機種が増えました。([#139](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/139))(モバイルアプリテスト)
-  - 高速起動する機種は「Pixel 3」になりました。
-- テスト結果画面からテスト結果について問い合わせる場合に、Appium/Seleniumログ、失敗時画面キャプチャ、失敗時UIツリーの添付内容を確認・上書き・削除できるようになりました。
-- テスト結果画面の細かい改善を行いました。([#145](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/145))
-- 自動修復の各種精度改善を行いました。
-- 利用しているAppiumのバージョンを更新しました。(モバイルアプリテスト)
-  - BrowserStack: Androidを[1.17.0](https://github.com/appium/appium/releases/tag/v1.17.0)に更新しました。
-  - RemoteTestKit: Androidを[1.16.0](https://github.com/appium/appium/releases/tag/v1.16.0)に更新しました。
-  - SaucewLabs: [1.17.0](https://github.com/appium/appium/releases/tag/v1.17.0)に更新しました。
+- iOS 클라우드 디바이스 테스트 작성 시에도 기종을 선택할 수 있습니다. (모바일 앱 테스트)
+- iOS 클라우드 디바이스에서 버전 13.4과 12.4를 선택 할 수 있습니다. (모바일 앱 테스트)
+- Android 클라우드 디바이스에서 선택 가능한 기종이 증가했습니다. (모바일 앱 테스트)
+  - 고속 작동 기종은「Pixel 3」입니다.
+- 테스트 결과 화면에서 테스트 결과에 대해 문의할 경우 Appium/Selenium 로그, 실패 시 화면 캡처, 실패 시 UI 트리 첨부 내용을 확인/덮어쓰기/삭제 할 수 있습니다.
+- 테스트 결과 화면의 세세한 부분을 개선했습니다.
+- 자동복구의 각종 정밀도를 개선했습니다.
+- 이용하고 있는 Appium 버전을 갱신했습니다. (모바일 앱 테스트)
+  - BrowserStack: Android를 [1.17.0]로 갱신했습니다.
+  - RemoteTestKit: Android를 [1.16.0]로 갱신했습니다.
+  - SaucewLabs: [1.17.0]로 갱신했습니다.
 
-### 不具合修正
+### 오류 수정
 
-- ブラウザの「戻る」ボタンを使ってテスト・共有ステップ編集画面に戻ると、古いテストケースが表示される問題を修正しました。([#145](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/145))
-- テスト実行中に組織・プロジェクト名を変更するとテストが終了しなくなる不具合を修正しました。([#171](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/171))
-- iOSの特定の画面でUIアップロードに失敗する不具合を修正しました。([#159](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/159))(モバイルアプリテスト)
-- iPhone専用のiOSアプリに対するテストをiPad上で実行すると、一部のコマンドが正常に動作しない不具合を修正しました。(モバイルアプリテスト)
-- SauceLabs上でのテスト実行が動作しなくなっていたので修正しました。(モバイルアプリテスト)
-  - SauceLabsの不具合が原因です。
+- 브라우저의「돌아가기」버튼을 사용하여 테스트・공유 스텝 편집 화면에 돌아가면, 옛날 테스트 케이스가 표시되는 문제를 수정했습니다.
+- 테스트 실행 중에 조직·프로젝트명을 변경하면 테스트가 종료되지 않는 오류를 수정했습니다.
+- iOS 특정 화면에서 UI 업로드가 실패되는 오류를 수정했습니다. (모바일 앱 테스트)
+- iPhone 전용 iOS앱에 대한 테스트를 iPad상에서 실행하면, 일부 명령어가 정상적으로 작동하지 않는 오류를 수정했습니다.(모바일 앱 테스트)
+- SauceLabs상에서 테스트 실행이 작동하지 않는 오류를 수정했습니다. (모바일 앱 테스트)
+  - SauceLabs\의 오류가 원인입니다.
 
-## バージョン0.51.0(2020/4/12)
+## 버전 0.51.0(2020/4/12)
 
-### 機能追加
+### 기능 추가
 
 - テスト一括実行を画面からスケジュール指定して実行可能になりました。好きな時間と曜日で定期実行できます。
   - 現在モバイルアプリテストでのみ利用可能です。
