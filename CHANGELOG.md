@@ -483,18 +483,18 @@
 - WebView요소를 HTML로 스캔을 하면 에러가 발생하여 수정했습니다.
 - Magic Pod Desktop에서 테스트를 실행햇을때, [특별한 변수]를 이용할 수 없는 오류를 수정했습니다.
 - 일부 플랜에서 설정되어 있는 프로젝트 수의 상한제한이 제대로 작동하지 않는 오류를 수정했습니다.
-- ファイルサイズが大きなアプリのアップロードに失敗するようになっていたので修正しました。
-- magic_pod_config.jsonでexternalAppiumをtrueにすると、iOSのテストで要素が何も見つからなくなっていたので修正しました。
+- 파일 용량이 큰 앱의 업로드를 실패하여 수정했습니다.
+- magic_pod_config.json에서 externalAppium을 true로 하면, iOS 테스트에서 요소를 찾을 수 없어서 수정했습니다.
 
-## バージョン0.47.0(2020/2/15)
+## 버전 0.47.0(2020/2/15)
 
-### 機能追加
+### 기능 추가
 
-- 「変数の値」が「一致するか」「一致しないか」「含むか」「含まないか」の「確認」「場合」コマンドを追加しました。([#130](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/130))
-- テストケースの複製機能を追加しました。([#124](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/124))
-- 「固定値を保存」のコマンドの値に、別の変数を含められるようになりました。
-- [magic-pod-api-client](https://github.com/Magic-Pod/magic-pod-api-client)にdelete-appのコマンドを追加しました。
-  - [magic-pod-api-client](https://github.com/Magic-Pod/magic-pod-api-client)のバージョン[0.46.0.1](https://github.com/Magic-Pod/magic-pod-api-client/releases/tag/0.46.0.1)をインストールする必要があります。
+- 「변수 값」이 「일치하는지」「일치하지 않는지」「포함하는지」「포함하지 않는지」의 「확인」「경우」 명령어를 추가했습니다.
+- 테스트 케이스의 복제 기능을 추가했습니다.
+- 「고정값 저장」 명령값에 다른 변수를 포함할 수 있습니다.
+- [magic-pod-api-client]에 delete-app 명령어를 추가했습니다.
+  - [magic-pod-api-client] 버전 [0.46.0.1]을 설치해야합니다.
 - テスト編集画面でUI要素に追加したロケータが、すぐに自動的に使用されるようになりました。
 - 1つのテストがタイムアウトするまでの時間が、テストの長さに応じて変わるようになりました。
 - テスト編集画面の各種改善を行いました。
