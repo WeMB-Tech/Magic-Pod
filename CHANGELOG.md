@@ -1,3 +1,39 @@
+## 버전0.65.0(2020/11/1)
+
+### 하위호환되지 않는 변경
+
+- cross-batch-run의 Web API가 복수(디바이스/브라우저) 패턴을 요약한 result의 값을 반환해줍니다.
+
+### 전반
+
+- `New` 복수(디바이스/브라우저)パターンの一括実行結果の各種改善を行いました。([#103](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/103))
+  - 全パターンの結果を1つの結果ページで見られる様になりました。
+  - screenshotsのWeb APIとmagic-pod-api-clientのget-screenshotsコマンドが、全パターンの画面キャプチャをダウンロードするようになりました。
+  - batch-runsのWeb APIが、全パターンを集約した結果を返すようになりました。
+  - テスト結果メールの書式を改善しました。
+  - 今回の修正に伴いテスト結果の進捗表記の数字が不正になるため、magic-pod-api-clientのバージョンを[0.65.0.1](https://github.com/Magic-Pod/magic-pod-api-client/releases/tag/0.65.0.1)にしてご利用ください。
+- `New` 組織、プロジェクト、テストケースの一覧に、説明の内容を表示するようにしました。([#207](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/207))
+- `New` 組織の表示名、プロジェクトの表示名、テストケース名、共有ステップ名に使える文字種類の制約が無くなりました。([#233](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/233))
+- `New` 自動修復の各種精度改善と不具合修正を行いました。
+- `New` テストごとの実行結果一覧ページの読み込み速度を改善しました。
+- `Fix` OSユーザー名に日本語が入っているとWindows版MagicPodDesktop.exeのインストールに失敗する不具合を修正しました。
+
+### モバイルアプリテスト
+
+- `New` ローカルPCのiOSシミュレータに、Xcode12.1、iOS14.1を利用可能になりました。
+- `New` iOSクラウド端末の安定性を強化しました。
+- `New` [driverExecutablePath](https://www.trident-qa.com/magic-pod-webview/#sec6)の設定で、ローカルPCのAndroid WebViewテストに利用するChrome Driverのバージョンを指定可能になりました。
+- `Fix` ローカルPCテストで画面キャプチャ取得ボタンを連続して押すとUIスキャンに失敗することがあったので修正しました。
+- `Fix` サイズの大きいアプリのアップロードに失敗することがあったので修正しました。
+
+### ブラウザテスト
+
+- `New` 「指定位置クリック」のコマンドを追加しました。([#206](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/206))
+- `New` 組織の設定画面から、スタンダードプランをクレジットカード申し込み可能になりました。
+- `New` Chrome87とEdge87に対応しました。
+- `Fix` ローカルPCのChromeテスト実行がバージョン判定エラーで失敗することがあったので修正しました。
+
+
 ## 버전 0.64.0(2020/10/18)
 
 ### 전반
@@ -22,6 +58,7 @@
 
 - `New` 브라우저 테스트 플랜의 현재 내용 확인과 트라이얼 신청이 조직 설정 화면에서 가능합니다.
 
+
 ## 버전 0.63.0(2020/10/4)
 
 ### 전반
@@ -45,6 +82,7 @@
 ### 브라우저 테스트
 
 - `Fix` UI스캔이 제대로 작동하지 않는 오류를 수정했습니다.
+
 
 ## 버전 0.62.0(2020/9/23)
 
@@ -73,6 +111,7 @@
 ### 브라우저 테스트
 
 - `New` Chrome86과 Edge86를 지원합니다.
+
 
 ## 버전 0.61.0(2020/9/5)
 
