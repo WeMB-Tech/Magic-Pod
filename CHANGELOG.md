@@ -2,11 +2,11 @@
 
 ### 하위호환되지 않는 변경
 
-- cross-batch-run의 Web API가 복수(디바이스/브라우저) 패턴을 요약한 result의 값을 반환해줍니다.
+- cross-batch-run의 Web API가 복수(디바이스/브라우저) 패턴을 요약한 result 값을 반환해줍니다.
 
 ### 전반
 
-- `New` 복수(디바이스/브라우저)パターンの一括実行結果の各種改善を行いました。([#103](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/103))
+- `New` 복수(디바이스/브라우저) 패턴의 일괄실행결과의 여러사항을 개선했습니다.
   - 全パターンの結果を1つの結果ページで見られる様になりました。
   - screenshotsのWeb APIとmagic-pod-api-clientのget-screenshotsコマンドが、全パターンの画面キャプチャをダウンロードするようになりました。
   - batch-runsのWeb APIが、全パターンを集約した結果を返すようになりました。
