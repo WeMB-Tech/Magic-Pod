@@ -7,31 +7,31 @@
 ### 전반
 
 - `New` 복수(디바이스/브라우저) 패턴의 일괄실행결과의 여러사항을 개선했습니다.
-  - 全パターンの結果を1つの結果ページで見られる様になりました。
-  - screenshotsのWeb APIとmagic-pod-api-clientのget-screenshotsコマンドが、全パターンの画面キャプチャをダウンロードするようになりました。
-  - batch-runsのWeb APIが、全パターンを集約した結果を返すようになりました。
-  - テスト結果メールの書式を改善しました。
-  - 今回の修正に伴いテスト結果の進捗表記の数字が不正になるため、magic-pod-api-clientのバージョンを[0.65.0.1](https://github.com/Magic-Pod/magic-pod-api-client/releases/tag/0.65.0.1)にしてご利用ください。
-- `New` 組織、プロジェクト、テストケースの一覧に、説明の内容を表示するようにしました。([#207](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/207))
-- `New` 組織の表示名、プロジェクトの表示名、テストケース名、共有ステップ名に使える文字種類の制約が無くなりました。([#233](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/233))
-- `New` 自動修復の各種精度改善と不具合修正を行いました。
-- `New` テストごとの実行結果一覧ページの読み込み速度を改善しました。
-- `Fix` OSユーザー名に日本語が入っているとWindows版MagicPodDesktop.exeのインストールに失敗する不具合を修正しました。
+  - 전체 패턴의 결과를 1개의 결과페이지에서 볼 수 있습니다.
+  - screenshots의 Web API와 magic-pod-api-client의 get-screenshots 명령어가 전체 패턴의 화면 캡쳐를 다운로드 할 수 있습니다.
+  - batch-runs의 Web API가 전체 패턴을 요약한 result 값을 반환해줍니다.
+  - 테스트 결과 메일의 서식을 개선했습니다.
+  - 이번 수정에의해 테스트 결과의 진척 표기 숫자가 부정확하게 되었으므로, magic-pod-api-client [0.65.0.1] 버전을 이용해주십시오.
+- `New` 조직, 프로젝트, 테스트 케이스 목록에 설명 내용이 표시됩니다.
+- `New` 조직 표시명, 프로젝트 표시명, 테스트 케이스명, 공유 스텝명에 사용할 수 있는 문자 종류의 제약이 없어졌습니다.
+- `New` 자동복구의 각종 정밀도 개선과 오류 수정을 진행했습니다.
+- `New` 테스트별 수행결과의 목록페이지의 읽기 속도를 개선했습니다.
+- `Fix` OS 사용자 아이디에 일본어가 있으면 Windows판 MagicPodDesktop.exe 설치에 실패하는 오류를 수정했습니다.
 
-### モバイルアプリテスト
+### 모바일 앱 테스트
 
-- `New` ローカルPCのiOSシミュレータに、Xcode12.1、iOS14.1を利用可能になりました。
-- `New` iOSクラウド端末の安定性を強化しました。
-- `New` [driverExecutablePath](https://www.trident-qa.com/magic-pod-webview/#sec6)の設定で、ローカルPCのAndroid WebViewテストに利用するChrome Driverのバージョンを指定可能になりました。
-- `Fix` ローカルPCテストで画面キャプチャ取得ボタンを連続して押すとUIスキャンに失敗することがあったので修正しました。
-- `Fix` サイズの大きいアプリのアップロードに失敗することがあったので修正しました。
+- `New` 로컬 PC의 iOS 시뮬레이터에 Xcode12.1, iOS14.1을 이용할 수 있습니다.
+- `New` iOS 클라우드 디바이스의 안정성을 강화하였습니다.
+- `New` [driverExecutablePath] 설정에서 로컬 PC의 Android WebView 테스트에 이용할 Chrome Driver 버전을 지정할 수 있습니다.
+- `Fix` 로컬 PC테스트에서 화면 캡쳐 취득 버튼을 연속해서 누르면 UI스캔에 실패하는 오류를 수정했습니다.
+- `Fix` 사이즈가 큰 어플리케이션은 업로드 실패하는 경우가 많아 개선했습니다.
 
-### ブラウザテスト
+### 브라우저 테스트
 
-- `New` 「指定位置クリック」のコマンドを追加しました。([#206](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/206))
-- `New` 組織の設定画面から、スタンダードプランをクレジットカード申し込み可能になりました。
-- `New` Chrome87とEdge87に対応しました。
-- `Fix` ローカルPCのChromeテスト実行がバージョン判定エラーで失敗することがあったので修正しました。
+- `New` 「지정 위치 클릭」명령어를 추가했습니다.
+- `New` 조직 설정 화면에서 스탠다드 요금제를 신용카드로 신청할 수 있습니다.
+- `New` Chrome87과 Edge87를 지원합니다.
+- `Fix` 로컬 PC의 Chrome 테스트 실행이 버전 판정 오류로 실패하는 경우가 있어 개선했습니다.
 
 
 ## 버전 0.64.0(2020/10/18)
