@@ -594,8 +594,8 @@
 - 「테스트 일괄 실행」 설정에서 「외부 클라우드 서비스」의 「액세스 키」「액세스 토큰」「TestObject API 키」값을 보존 할 수 있습니다.
   - 암호화하여 저장됩니다.
 - 「테스트 일괄 실행」 설정에서 「클라우드」 환경에 대해서도 「디바이스 패턴 추가」가 가능합니다.
-- [magic-pod-api-client](https://github.com/Magic-Pod/magic-pod-api-client)から複数端末パターンを使った一括実行を行えるようになりました。
-  - [magic-pod-api-client](https://github.com/Magic-Pod/magic-pod-api-client)の[バージョン0.45.0.1](https://github.com/Magic-Pod/magic-pod-api-client/releases/tag/0.45.0.1)をインストールする必要があります。
+- [magic-pod-api-client]から複数端末パターンを使った一括実行を行えるようになりました。
+  - [magic-pod-api-client] の[バージョン0.45.0.1] をインストールする必要があります。
 - cross-batch-runのWeb APIの返り値として各種テスト情報が返るようになりました。
 - iOS12シミュレータでも「WebView要素をHTMLとしてスキャンする」設定が利用可能になりました。
 - 「クラウド」の環境でもAndroidの「WebView要素をHTMLとしてスキャンする」設定が利用可能になりました。
