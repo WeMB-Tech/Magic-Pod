@@ -1,15 +1,15 @@
-## バージョン0.66.0(2020/11/14)
+## 버전 0.66.0(2020/11/14)
 
-### 全般
+### 전반
 
-- `New` テスト編集画面にて、複数のUIを別セクションに一括で移動できるようになりました。([#101](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/101)、[#201](https://github.com/Magic-Pod/japanese-issue-and-doc/issues/201))
-- `New` magic_pod_config.jsonのlanguageで、Magic Pod Desktopコマンドライン実行時の表示言語を指定可能になりました。
-- `New` 自動修復の各種精度改善を行いました。
+- `New` 테스트 편집화면에서 복수의 UI를 다른 섹션으로 일괄 이동할 수 있습니다.
+- `New` magic_pod_config.jsonのlanguage에서 Magic Pod Desktop 명령어 실행시 표시 언어를 지정 할 수 있습니다.
+- `New` 자동복구의 세세한 부분을 개선했습니다.
 
-### モバイルアプリテスト
+### 모바일 앱 테스트
 
-- `New` ローカルPCのiOSシミュレータテストで、「iPhone 12」シリーズなどの新しい端末を指定可能になりました。
-- `Fix` Xcode12を使ったローカルPCのiOSテストで「-ios class chain」ロケータがうまく動作しないケースがあったので、 この場合xpathを使うようにしました。
+- `New` 로컬 PC의 iOS 시뮬레이터 테스트에서 「iPhone 12」시리즈등 fhdns    シリーズなどの新しい端末を指定可能になりました。
+- `Fix` Xcode12를 사용한 로컬PC의 iOS 테스트에서 「-ios class chain」로케이터가 제대로 작동하지 않는 케이스가 있어서ロケータがうまく動作しないケースがあったので、 이 경우xpathを使うようにしました。
 - `Fix` WebViewをHTMLとしてスキャンしているテストの失敗時UIツリーが開けないことがある問題を改善しました。
 - `Fix` 一括実行の端末パターン/ブラウザパターンに日本語が含まれていると、SauceLabsのモバイル実機テストがエラーになっていたので修正しました。
 
