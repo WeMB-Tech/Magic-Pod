@@ -3,7 +3,7 @@
 ### 전반
 
 - `New` 테스트 편집화면에서 복수의 UI를 다른 섹션으로 일괄 이동할 수 있습니다.
-- `New` magic_pod_config.jsonのlanguage에서 Magic Pod Desktop 명령어 실행시 표시 언어를 지정 할 수 있습니다.
+- `New` magic_pod_config.json의 language에서 Magic Pod Desktop 명령어 실행시 표시 언어를 지정 할 수 있습니다.
 - `New` 자동복구의 세세한 부분을 개선했습니다.
 
 ### 모바일 앱 테스트
