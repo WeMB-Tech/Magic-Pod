@@ -7,9 +7,9 @@
 ### 전반
 
 - `New` 조건문
- - 단, 조건
+   - 단, 조건
 - `New` Browse
- - Brow
+   - Brow
 - `New` 특히
 - `New` 요소
 - `New` 자동
